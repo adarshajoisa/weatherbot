@@ -1,0 +1,3 @@
+Use conversation list to try to find a reference to time such as 'today' when the location is asked
+Use conversation list to store more data such as a previously mentioned location, etc. 
+Preferably, use a predefined set of variables such as location, time, etc to store information from the conversation. Whenever a new reference is made to a location or time or something, update the variable.

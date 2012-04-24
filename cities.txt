@@ -1,0 +1,719 @@
+Aba	931 872	Nigeria
+	2	Abeokuta	612 277	Nigeria
+	3	Abidjan	3 796 677	Ivory Coast
+	4	Abu Dhabi	619 316	United Arab Emirates
+	5	Acapulco	658 347	Mexico
+	6	Accra	2 029 143	Ghana
+	7	Adana	1 271 894	Turkey
+	8	ad-Dammam	793 553	Saudi Arabia
+	9	Addis Abeba	2 823 167	Ethiopia
+	10	Adelaide	1 076 969	Australia
+	11	Aden	625 361	Yemen
+	12	Agadir	718 498	Morocco
+	13	Agra	1 475 091	India
+	14	Aguascalientes	671 584	Mexico
+	15	Ahmadabad	3 769 846	India
+	16	Ahvaz	841 145	Iran
+	17	Ajmer	525 927	India
+	18	al-Basrah	2 141 270	Iraq
+	19	Aleppo	1 626 218	Syria
+	20	Alexandria	3 865 502	Egypt
+	21	Algiers	2 029 936	Algeria
+	22	al-H_artum Bah?ri	1 626 638	Sudan
+	23	al-H?udaydah	677 315	Yemen
+	24	Aligarh	775 694	India
+	25	Allahabad	1 094 199	India
+	26	al-Madinah	975 218	Saudi Arabia
+	27	Almaty	1 216 378	Kazakhstan
+	28	al-Mawsil	2 143 094	Iraq
+	29	?Amman	1 303 197	Jordan
+	30	Ampang Jaya	682 053	Malaysia
+	31	Amravati	617 885	India
+	32	Amritsar	1 123 365	India
+	33	Amsterdam	744 159	Netherlands
+	34	Ankara	3 579 706	Turkey
+	35	Ansan	668 533	Korea (South)
+	36	Anshan	1 203 894	China
+	37	Antalya	792 373	Turkey
+	38	Antananarivo	1 463 754	Madagascar
+	39	Antipolo	566 150	Philippines
+	40	Anyang	792 081	China
+	41	Anyang	643 315	Korea (South)
+	42	Arak	521 166	Iran
+	43	Arequipa	859 704	Peru
+	44	Asansol	508 320	India
+	45	Asgabat	823 013	Turkmenistan
+	46	Asmara	578 860	Eritrea
+	47	as-Sulaymaniyah	748 150	Iraq
+	48	Astrakhan	501 970	Russia
+	49	Asunción	507 574	Paraguay
+	50	Athens	725 049	Greece
+	51	at-Ta?if	540 437	Saudi Arabia
+	52	Aurangabad	1 055 728	India
+	53	Austin	683 404	United States of America
+	54	Baghdad	5 753 612	Iraq
+	55	Bahawalpur	576 203	Pakistan
+	56	Baku	1 118 725	Azerbaijan
+	57	Baltimore	602 658	United States of America
+	58	Bamako	1 342 519	Mali
+	59	Bandar Lampung	828 507	Indonesia
+	60	Bandung	1 676 048	Indonesia
+	61	Bangalore	5 104 047	India
+	62	Bangkok	4 935 988	Thailand
+	63	Bangui	547 668	Central African Republic
+	64	Banjarmasin	581 573	Indonesia
+	65	Baoding	1 027 984	China
+	66	Baotou	1 301 768	China
+	67	Barcelona	1 591 485	Spain
+	68	Bareli	756 432	India
+	69	Barnaul	599 296	Russia
+	70	Barquisimeto	821 253	Venezuela
+	71	Barranquilla	1 405 405	Colombia
+	72	Bayrut	1 273 440	Lebanon
+	73	Beira	545 724	Mozambique
+	74	Bekasi	1 569 289	Indonesia
+	75	Belém	1 436 287	Brazil
+	76	Belgrade	1 113 589	Serbia and Montenegro
+	77	Belo Horizonte	2 399 577	Brazil
+	78	Bengbu	585 037	China
+	79	Benghazi	665 689	Libya
+	80	Benin	1 147 188	Nigeria
+	81	Benoni	637 712	South Africa
+	82	Benxi	1 011 025	China
+	83	Berlin	3 378 275	Germany
+	84	Bhavnagar	566 241	India
+	85	Bhilai	643 975	India
+	86	Bhiwandi	736 978	India
+	87	Bhopal	1 643 049	India
+	88	Bhubaneswar	794 039	India
+	89	Bikaner	587 937	India
+	90	Birmingham	986 969	United Kingdom
+	91	Biskek	915 625	Kyrgyzstan
+	92	Blantyre	601 381	Malawi
+	93	Bogor	785 354	Indonesia
+	94	Bogotá	7 235 084	Colombia
+	95	Bombay	12 883 645	India
+	96	Boston	567 759	United States of America
+	97	Bouaké	582 461	Ivory Coast
+	98	Brasília	2 260 541	Brazil
+	99	Brazzaville	1 326 975	Congo
+	100	Bremen	547 915	Germany
+	101	Brisbane	1 891 999	Australia
+	102	Brussels	1 031 925	Belgium
+	103	Bucaramanga	581 337	Colombia
+	104	Bucharest	1 862 930	Romania
+	105	Budapest	1 700 019	Hungary
+	106	Buenos Aires	11 595 183	Argentina
+	107	Bulawayo	706 492	Zimbabwe
+	108	Bursa	1 458 459	Turkey
+	109	Cairo	7 836 243	Egypt
+	110	Calcutta	4 638 350	India
+	111	Calgary	991 432	Canada
+	112	Cali	2 445 713	Colombia
+	113	Campinas	1 047 239	Brazil
+	114	Campo Grande	745 017	Brazil
+	115	Cancún	576 597	Mexico
+	116	Cangzhou	544 887	China
+	117	Cape Town	3 546 429	South Africa
+	118	Caracas	1 808 937	Venezuela
+	119	Cartagena	976 761	Colombia
+	120	Casablanca	3 177 281	Morocco
+	121	Cebu	814 296	Philippines
+	122	Chandigarh	942 769	India
+	123	Changchun	2 602 574	China
+	124	Changde	535 634	China
+	125	Changsha	2 131 620	China
+	126	Changwon	536 169	Korea (South)
+	127	Changzhi	708 847	China
+	128	Changzhou	963 755	China
+	129	Charlotte	607 111	United States of America
+	130	Chattagam	3 795 034	Bangladesh
+	131	Chelyabinsk	1 058 281	Russia
+	132	Chengdu	3 961 709	China
+	133	Chiba	926 276	Japan
+	134	Chicago	2 830 144	United States of America
+	135	Chiclayo	592 137	Peru
+	136	Chihuahua	718 551	Mexico
+	137	Chimalhuacán	615 338	Mexico
+	138	Chisinau	623 671	Moldova
+	139	Chongju	643 591	Korea (South)
+	140	Chongqing	4 133 663	China
+	141	Chonju	729 337	Korea (South)
+	142	Ciudad Guayana	769 243	Venezuela
+	143	Cochabamba	932 871	Bolivia
+	144	Cologne	960 974	Germany
+	145	Colombo	649 496	Sri Lanka
+	146	Columbus	741 677	United States of America
+	147	Conakry	1 970 382	Guinea
+	148	Contagem	646 211	Brazil
+	149	Copenhagen	1 091 978	Denmark
+	150	Córdoba	1 442 911	Argentina
+	151	Cotonou	701 137	Benin
+	152	Cracow	753 829	Poland
+	153	Cúcuta	740 957	Colombia
+	154	Cuiabá	531 408	Brazil
+	155	Culiacán	591 064	Mexico
+	156	Curitiba	1 746 484	Brazil
+	157	Dakar	2 406 598	Senegal
+	158	Dalian	2 076 179	China
+	159	Dallas	1 216 543	United States of America
+	160	Damascus	1 580 909	Syria
+	161	Dandong	643 176	China
+	162	Dar es Salaam	2 805 523	Tanzania
+	163	Datong	1 061 482	China
+	164	Davao	1 245 382	Philippines
+	165	Dehra Dun	542 267	India
+	166	Delhi	11 215 130	India
+	167	Denver	556 575	United States of America
+	168	Depok	1 255 343	Indonesia
+	169	Detroit	871 789	United States of America
+	170	Dhaka	6 724 976	Bangladesh
+	171	Diyarbakir	665 699	Turkey
+	172	Dnipropetrovs?k	1 025 044	Ukraine
+	173	Donetsk	980 419	Ukraine
+	174	Dortmund	587 233	Germany
+	175	Douala	1 371 448	Cameroon
+	176	Dubai	1 182 439	United Arab Emirates
+	177	Dublin	1 030 431	Ireland
+	178	Duisburg	502 251	Germany
+	179	Duque de Caxias	829 012	Brazil
+	180	Durban	3 244 028	South Africa
+	181	Durgapur	525 047	India
+	182	Dushanbe	538 456	Tajikistan
+	183	Düsseldorf	573 521	Germany
+	184	Ecatepec	1 844 447	Mexico
+	185	Edmonton	831 979	Canada
+	186	El Alto	872 211	Bolivia
+	187	El Paso	603 545	United States of America
+	188	Enugu	671 501	Nigeria
+	189	Esfahan	1 573 378	Iran
+	190	Eskisehir	520 701	Turkey
+	191	Essen	596 204	Germany
+	192	Faisalabad	2 582 175	Pakistan
+	193	Faridabad	1 344 436	India
+	194	Fez	983 226	Morocco
+	195	Fortaleza	2 349 632	Brazil
+	196	Fort Worth	633 849	United States of America
+	197	Foshan	663 558	China
+	198	Frankfurt	642 811	Germany
+	199	Freetown	818 709	Sierra Leone
+	200	Fukuoka	1 402 674	Japan
+	201	Funabashi	562 813	Japan
+	202	Fushun	1 410 771	China
+	203	Fuxin	695 149	China
+	204	Fuzhou	1 202 136	China
+	205	Gaziantep	1 102 364	Turkey
+	206	Genoa	599 064	Italy
+	207	Ghaziabad	1 264 968	India
+	208	Gizeh	2 468 625	Egypt
+	209	Glasgow	607 192	United Kingdom
+	210	Goiânia	1 188 787	Brazil
+	211	Gold Coast	523 174	Australia
+	212	Gorakhpur	686 562	India
+	213	Göteborg	518 990	Sweden
+	214	Guadalajara	1 637 213	Mexico
+	215	Guadalupe	736 036	Mexico
+	216	Guangzhou	3 158 125	China
+	217	Guarulhos	1 198 633	Brazil
+	218	Guatemala	1 010 253	Guatemala
+	219	Guayaquil	1 952 029	Ecuador
+	220	Guilin	670 048	China
+	221	Guiyang	1 183 692	China
+	222	Gujranwala	1 421 834	Pakistan
+	223	Guntur	534 020	India
+	224	Guwahati	923 348	India
+	225	Gwalior	895 900	India
+	226	Hachioji	588 315	Japan
+	227	Haikou	631 179	China
+	228	Hai Phong	611 819	Vietnam
+	229	Hamadan	528 261	Iran
+	230	Hamamatsu	609 786	Japan
+	231	Hamburg	1 743 891	Germany
+	232	Hamhung	564 522	Korea (North)
+	233	Hamilton	661 942	Canada
+	234	Handan	1 369 601	China
+	235	Hangzhou	1 894 655	China
+	236	Ha Noi	1 452 055	Vietnam
+	237	Hanover	514 259	Germany
+	238	Haora	1 031 223	India
+	239	Harare	1 575 127	Zimbabwe
+	240	Harbin	3 279 454	China
+	241	Hargeysa	500 710	Somalia
+	242	Havanna	2 163 132	Cuba
+	243	Hefei	1 406 741	China
+	244	Hegang	753 760	China
+	245	Helsinki	558 341	Finland
+	246	Hengyang	761 888	China
+	247	Hermosillo	606 231	Mexico
+	248	Higashiosaka	512 691	Japan
+	249	H?ims	798 781	Syria
+	250	Hiroshima	1 147 357	Japan
+	251	Ho Chi Minh City	3 496 586	Vietnam
+	252	Hohhot	783 645	China
+	253	Houston	2 043 005	United States of America
+	254	Huaibei	932 185	China
+	255	Huainan	1 075 754	China
+	256	Huaiyin	558 201	China
+	257	Huangshi	697 355	China
+	258	Hubli	853 730	India
+	259	Hyderabad	3 632 094	India
+	260	Hyderabad	1 417 082	Pakistan
+	261	Ibadan	3 707 361	Nigeria
+	262	Ilorin	831 676	Nigeria
+	263	Inchon	2 618 428	Korea (South)
+	264	Indianapolis	771 725	United States of America
+	265	Indore	1 901 271	India
+	266	Ipoh	692 247	Malaysia
+	267	Irbil	962 936	Iraq
+	268	Irkutsk	584 442	Russia
+	269	Islamabad	794 431	Pakistan
+	270	Istanbul	10 034 830	Turkey
+	271	Izhevsk	630 755	Russia
+	272	Izmir	2 557 851	Turkey
+	273	Jabalpur	1 049 768	India
+	274	Jaboatão	729 890	Brazil
+	275	Jacksonville	809 874	United States of America
+	276	Jaipur	2 817 522	India
+	277	Jakarta	8 556 798	Indonesia
+	278	Jalandhar	807 409	India
+	279	Jamnagar	503 563	India
+	280	Jamshedpur	627 761	India
+	281	Jerusalem	731 731	Israel
+	282	Jiamusi	554 612	China
+	283	Jiangmen	553 611	China
+	284	Jiaozuo	526 026	China
+	285	Jibuti	633 884	Djibouti
+	286	Jiddah	2 934 584	Saudi Arabia
+	287	Jilin	1 955 804	China
+	288	Jinan	2 109 987	China
+	289	Jinzhou	603 987	China
+	290	Jiulong	1 983 415	China
+	291	João Pessoa	662 337	Brazil
+	292	Jodhpur	940 513	India
+	293	Johannesburg	2 091 491	South Africa
+	294	Johor Bahru	838 947	Malaysia
+	295	Jos	839 334	Nigeria
+	296	Juárez	1 449 006	Mexico
+	297	Kabul	3 120 963	Afghanistan
+	298	Kaduna	1 619 164	Nigeria
+	299	Kagoshima	556 069	Japan
+	300	Kaifeng	581 579	China
+	301	Kalyan	1 278 933	India
+	302	Kampala	1 403 619	Uganda
+	303	Kano	3 739 214	Nigeria
+	304	Kanpur	2 898 859	India
+	305	Kaohsiung	1 516 276	Taiwan
+	306	Karachi	11 969 284	Pakistan
+	307	Karaj	1 523 085	Iran
+	308	Kataka	606 184	India
+	309	Kathmandu	822 930	Nepal
+	310	Kawasaki	1 318 034	Japan
+	311	Kayseri	603 693	Turkey
+	312	Kazan	1 104 802	Russia
+	313	Kerman	606 967	Iran
+	314	Kermanshah	765 075	Iran
+	315	Khabarovsk	576 745	Russia
+	316	Kharkiv	1 421 205	Ukraine
+	317	Khartoum	2 090 001	Sudan
+	318	Khulna	1 371 363	Bangladesh
+	319	Kiev	2 491 404	Ukraine
+	320	Kigali	800 003	Rwanda
+	321	Kingston	585 300	Jamaica
+	322	Kinshasa	8 096 254	Congo (Dem. Rep.)
+	323	Kirkuk	610 954	Iraq
+	324	Kisangani	547 531	Congo (Dem. Rep.)
+	325	Kitakyushu	994 767	Japan
+	326	Klang	936 664	Malaysia
+	327	Kobe	1 535 384	Japan
+	328	Kochi	606 223	India
+	329	Kolhapur	523 722	India
+	330	Kolwezi	940 665	Congo (Dem. Rep.)
+	331	Konya	903 797	Turkey
+	332	Kota	780 296	India
+	333	Koyampattur	968 524	India
+	334	Koyang	1 300 684	Korea (South)
+	335	Krasnodar	651 249	Russia
+	336	Krasnoyarsk	906 949	Russia
+	337	Kryvyy Rih	648 399	Ukraine
+	338	Kuala Lumpur	1 482 359	Malaysia
+	339	Kuching	602 113	Malaysia
+	340	Kumamoto	684 505	Japan
+	341	Kumasi	1 535 478	Ghana
+	342	Kunming	1 044 356	China
+	343	Kwangju	1 429 400	Korea (South)
+	344	Kyoto	1 458 183	Japan
+	345	Lagos	9 020 089	Nigeria
+	346	Lahore	6 485 175	Pakistan
+	347	Lakhnau	2 541 101	India
+	348	Langfang	726 100	China
+	349	Lanzhou	1 431 171	China
+	350	La Paz	817 032	Bolivia
+	351	La Plata	696 856	Argentina
+	352	Las Vegas	553 807	United States of America
+	353	Leipzig	502 467	Germany
+	354	León	1 134 232	Mexico
+	355	Liaoyang	701 848	China
+	356	Libreville	591 356	Gabon
+	357	Lilongwe	683 477	Malawi
+	358	Lima	7 857 121	Peru
+	359	Lipetsk	519 026	Russia
+	360	Lisbon	508 209	Portugal
+	361	Liuzhou	772 579	China
+	362	Lódz	762 615	Poland
+	363	Lomé	737 751	Togo
+	364	London	7 489 022	United Kingdom
+	365	López Mateos	532 615	Mexico
+	366	Los Angeles	3 911 500	United States of America
+	367	Luancheng	602 090	China
+	368	Luanda	2 875 277	Angola
+	369	Lubumbashi	1 425 001	Congo (Dem. Rep.)
+	370	Ludhiana	1 584 743	India
+	371	Luoyang	1 397 051	China
+	372	Lusaka	1 306 577	Zambia
+	373	L?viv	714 131	Ukraine
+	374	Maanshan	545 734	China
+	375	Maceió	989 318	Brazil
+	376	Madras	4 352 932	India
+	377	Madrid	3 146 804	Spain
+	378	Madurai	905 649	India
+	379	Maiduguri	1 155 094	Nigeria
+	380	Maisuru	902 986	India
+	381	Makasar	1 351 104	Indonesia
+	382	Makhachkala	510 775	Russia
+	383	Málaga	553 916	Spain
+	384	Malang	749 593	Indonesia
+	385	Managua	990 417	Nicaragua
+	386	Manaus	1 642 982	Brazil
+	387	Mandalay	1 237 028	Myanmar
+	388	Manila	10 546 511	Philippines
+	389	Maoming	508 633	China
+	390	Maputo	1 220 167	Mozambique
+	391	Maracaibo	2 000 482	Venezuela
+	392	Mar del Plata	556 477	Argentina
+	393	Marrakesh	855 592	Morocco
+	394	Marseille	793 352	France
+	395	Mashhad	2 387 734	Iran
+	396	Matola	556 940	Mozambique
+	397	Mbuji-Mayi	896 435	Congo (Dem. Rep.)
+	398	Mecca	1 353 480	Saudi Arabia
+	399	Medan	1 757 817	Indonesia
+	400	Medellín	2 021 392	Colombia
+	401	Meknes	555 248	Morocco
+	402	Melbourne	3 780 871	Australia
+	403	Memphis	639 736	United States of America
+	404	Mendoza	883 827	Argentina
+	405	Mérida	728 271	Mexico
+	406	Mersin	626 766	Turkey
+	407	Mexicali	606 419	Mexico
+	408	Mexico City	8 659 409	Mexico
+	409	Milan	1 316 218	Italy
+	410	Milwaukee	575 250	United States of America
+	411	Minsk	1 747 482	Belarus
+	412	Mira Bhayandar	740 038	India
+	413	Mirat	1 262 757	India
+	414	Mixco	505 879	Guatemala
+	415	Mogadishu	2 723 378	Somalia
+	416	Mombasa	823 500	Kenya
+	417	Monrovia	954 458	Liberia
+	418	Monterrey	1 123 777	Mexico
+	419	Montevideo	1 271 664	Uruguay
+	420	Montreal	3 280 123	Canada
+	421	Moradabad	742 090	India
+	422	Morelia	601 549	Mexico
+	423	Moscow	10 472 629	Russia
+	424	Mudanjiang	675 831	China
+	425	Multan	1 471 978	Pakistan
+	426	Munich	1 272 179	Germany
+	427	Mykolayiv	510 089	Ukraine
+	428	Naberezhnyye Chelny	521 800	Russia
+	429	Nagoya	2 194 748	Japan
+	430	Nagpur	2 272 891	India
+	431	Nairobi	2 864 667	Kenya
+	432	Nanchang	1 934 445	China
+	433	Nanjing	3 160 179	China
+	434	Nanning	805 718	China
+	435	Nantong	669 817	China
+	436	Naples	983 614	Italy
+	437	Nashik	1 348 872	India
+	438	Nashville	523 547	United States of America
+	439	Natal	774 336	Brazil
+	440	Naucalpan	847 600	Mexico
+	441	Navi Mumbai	979 458	India
+	442	N?Djaména	737 281	Chad
+	443	Neijiang	548 414	China
+	444	Newcastle	500 085	Australia
+	445	New York	8 124 427	United States of America
+	446	Nezahualcóyotl	1 230 816	Mexico
+	447	Niamey	801 297	Niger
+	448	Niigata	506 099	Japan
+	449	Ningbo	726 201	China
+	450	Niyala	532 183	Sudan
+	451	Nizhniy Novgorod	1 275 318	Russia
+	452	Nouakchott	731 242	Mauritania
+	453	Nova Iguaçu	1 019 753	Brazil
+	454	Novokuznetsk	536 257	Russia
+	455	Novosibirsk	1 417 107	Russia
+	456	Odesa	995 028	Ukraine
+	457	Ogbomosho	902 797	Nigeria
+	458	Okayama	642 279	Japan
+	459	Oklahoma City	538 141	United States of America
+	460	Omsk	1 127 864	Russia
+	461	Onitsha	576 589	Nigeria
+	462	Orenburg	550 552	Russia
+	463	Orumiyeh	623 143	Iran
+	464	Osaka	2 590 815	Japan
+	465	Osasco	684 040	Brazil
+	466	Oshogbo	523 619	Nigeria
+	467	Oslo	821 445	Norway
+	468	Ottawa	885 542	Canada
+	469	Ouagadougou	1 119 775	Burkina Faso
+	470	Oyo	771 729	Nigeria
+	471	Padang	869 534	Indonesia
+	472	Palembang	1 249 543	Indonesia
+	473	Palermo	668 275	Italy
+	474	Panjin	639 632	China
+	475	Paris	2 141 839	France
+	476	Patna	1 660 126	India
+	477	Pekan Baru	677 741	Indonesia
+	478	Peking	7 602 069	China
+	479	Penza	510 851	Russia
+	480	Perm	976 116	Russia
+	481	Perth	1 472 075	Australia
+	482	Peshawar	1 253 687	Pakistan
+	483	Petaling Jaya	535 763	Malaysia
+	484	Philadelphia	1 439 814	United States of America
+	485	Phnum Pénh	1 673 131	Cambodia
+	486	Phoenix	1 450 884	United States of America
+	487	Pietermaritzburg	797 759	South Africa
+	488	Pimpri	1 366 010	India
+	489	Pingdingshan	893 814	China
+	490	Pointe Noire	683 621	Congo
+	491	Port-au-Prince	1 277 104	Haiti
+	492	Port Elizabeth	992 669	South Africa
+	493	Port Harcourt	1 177 191	Nigeria
+	494	Portland	542 751	United States of America
+	495	Porto Alegre	1 380 983	Brazil
+	496	Port Said	546 776	Egypt
+	497	Poznan	567 957	Poland
+	498	Prague	1 168 374	Czech Republic
+	499	Pretoria	1 687 779	South Africa
+	500	Puchon	840 243	Korea (South)
+	501	Puebla	1 416 551	Mexico
+	502	Puente Alto	516 347	Chile
+	503	Pune	3 043 128	India
+	504	Pusan	3 672 732	Korea (South)
+	505	Puyang	697 988	China
+	506	Pyongyang	2 992 272	Korea (North)
+	507	Qingdao	1 668 503	China
+	508	Qinhuangdao	777 519	China
+	509	Qiqihar	894 833	China
+	510	Qom	1 046 578	Iran
+	511	Quebec	647 916	Canada
+	512	Querétaro	627 721	Mexico
+	513	Quetta	759 894	Pakistan
+	514	Quito	1 399 814	Ecuador
+	515	Rabat	1 688 738	Morocco
+	516	Raipur	699 683	India
+	517	Rajkot	1 237 157	India
+	518	Rajshahi	713 533	Bangladesh
+	519	Ranchi	970 602	India
+	520	Rangoon	4 572 948	Myanmar
+	521	Rasht	618 589	Iran
+	522	Rawalpindi	1 793 197	Pakistan
+	523	Recife	1 489 055	Brazil
+	524	Reynosa	519 393	Mexico
+	525	Ribeirão Preto	560 393	Brazil
+	526	Riga	738 386	Latvia
+	527	Rio de Janeiro	6 055 582	Brazil
+	528	Riyadh	4 328 067	Saudi Arabia
+	529	Rome	2 561 181	Italy
+	530	Rongcheng	1 102 568	China
+	531	Rosario	1 176 177	Argentina
+	532	Rostov-na-Donu	1 076 897	Russia
+	533	Rotterdam	597 481	Netherlands
+	534	Ryazan	519 749	Russia
+	535	Sagamihara	657 699	Japan
+	536	Saint Petersburg	4 014 710	Russia
+	537	Saitama	1 088 954	Japan
+	538	Sakai	780 367	Japan
+	539	Salta	523 878	Argentina
+	540	Saltillo	633 414	Mexico
+	541	Salvador	2 762 758	Brazil
+	542	Samara	1 127 228	Russia
+	543	San?a	1 921 589	Yemen
+	544	San Antonio	1 278 171	United States of America
+	545	San Diego	1 299 352	United States of America
+	546	San Francisco	723 724	United States of America
+	547	Sangli-Miraj	505 711	India
+	548	San Jose	897 883	United States of America
+	549	San Luis Potosí	687 623	Mexico
+	550	San Nicolás de los Garza	509 756	Mexico
+	551	San Pedro Sula	502 939	Honduras
+	552	San Salvador	534 409	El Salvador
+	553	Santa Cruz	1 404 609	Bolivia
+	554	Santiago	4 893 495	Chile
+	555	Santiago	572 535	Dominican Republic
+	556	Santiago de Cuba	563 001	Cuba
+	557	Santo André	664 670	Brazil
+	558	Santo Domingo	2 253 437	Dominican Republic
+	559	São Bernardo do Campo	756 260	Brazil
+	560	São Gonçalo	949 783	Brazil
+	561	São José dos Campos	630 107	Brazil
+	562	São Luís	935 083	Brazil
+	563	São Paulo	10 059 502	Brazil
+	564	Sapporo	1 895 505	Japan
+	565	Sarajevo	737 350	Bosnia and Herzegovina
+	566	Saratov	860 796	Russia
+	567	Sargodha	554 547	Pakistan
+	568	Seattle	570 430	United States of America
+	569	Selam	801 137	India
+	570	Semarang	1 287 754	Indonesia
+	571	Sendai	1 043 834	Japan
+	572	Sevilla	702 516	Spain
+	573	Shah Alam	521 219	Malaysia
+	574	Shanghai	15 017 783	China
+	575	Shantou	1 370 361	China
+	576	Shaoguan	656 561	China
+	577	Shaoyang	657 622	China
+	578	Sharjah	564 620	United Arab Emirates
+	579	Shashi	514 672	China
+	580	Shatian	662 208	China
+	581	Shenyang	3 538 726	China
+	582	Shenzhen	1 072 093	China
+	583	Shihezi	581 955	China
+	584	Shihung	708 271	Korea (South)
+	585	Shijiazhuang	2 080 120	China
+	586	Shiliguri	527 223	India
+	587	Shiraz	1 279 140	Iran
+	588	Shizuoka	700 506	Japan
+	589	Sholapur	1 030 655	India
+	590	Shubra-El-Khema	1 005 975	Egypt
+	591	Singapore	3 601 745	Singapore
+	592	Siping	575 804	China
+	593	Sofia	1 166 143	Bulgaria
+	594	Sokoto	583 039	Nigeria
+	595	Songnam	1 052 440	Korea (South)
+	596	Sorocaba	573 728	Brazil
+	597	Soul	10 409 345	Korea (South)
+	598	Soweto	1 766 824	South Africa
+	599	Srinagar	996 400	India
+	600	Stockholm	1 260 712	Sweden
+	601	Stuttgart	590 367	Germany
+	602	Subang Jaya	954 266	Malaysia
+	603	Surabaya	2 366 850	Indonesia
+	604	Surakarta	557 628	Indonesia
+	605	Surat	3 022 821	India
+	606	Suwon	1 306 343	Korea (South)
+	607	Suzhou	1 398 433	China
+	608	Sydney	4 444 513	Australia
+	609	Tabriz	1 460 961	Iran
+	610	Taegu	2 580 024	Korea (South)
+	611	Taejon	1 495 342	Korea (South)
+	612	Taian	787 375	China
+	613	Taichung	1 103 794	Taiwan
+	614	Tainan	735 787	Taiwan
+	615	Taipei	2 491 662	Taiwan
+	616	Taiyuan	2 752 516	China
+	617	Taizhou	615 633	China
+	618	Ta?izz	690 689	Yemen
+	619	Tangerang	1 402 600	Indonesia
+	620	Tanggu	549 723	China
+	621	Tangier	707 417	Morocco
+	622	Tangshan	1 610 214	China
+	623	Tashkent	1 967 879	Uzbekistan
+	624	Tbilisi	1 038 343	Georgia
+	625	Tegucigalpa	872 403	Honduras
+	626	Tehran	7 160 094	Iran
+	627	Tembisa	543 846	South Africa
+	628	Teresina	758 666	Brazil
+	629	Thana	1 548 351	India
+	630	Thiruvananthapuram	793 841	India
+	631	Tianjin	3 761 272	China
+	632	Tijuana	1 427 118	Mexico
+	633	Tiruchchirappalli	782 442	India
+	634	Tlalnepantla	715 026	Mexico
+	635	Tlaquepaque	501 185	Mexico
+	636	Tokyo	8 372 440	Japan
+	637	Toluca	520 660	Mexico
+	638	Tolyatti	723 927	Russia
+	639	Toronto	4 670 783	Canada
+	640	Torreón	528 012	Mexico
+	641	Tripoli	1 164 634	Libya
+	642	Trujillo	768 267	Peru
+	643	Tucson	525 268	United States of America
+	644	Tucumán	792 365	Argentina
+	645	Tunis	693 294	Tunisia
+	646	Turin	873 123	Italy
+	647	Tyumen	521 990	Russia
+	648	Uberlândia	580 576	Brazil
+	649	Ufa	1 030 423	Russia
+	650	Uijongbu	506 719	Korea (South)
+	651	Ulaanbaatar	862 842	Mongolia
+	652	Ulhasnagar	527 749	India
+	653	Ulsan	983 199	Korea (South)
+	654	Ulyanovsk	642 257	Russia
+	655	Umm Durman	2 970 099	Sudan
+	656	Urumqi	1 538 778	China
+	657	Vadodara	1 435 716	India
+	658	Valencia	1 421 142	Venezuela
+	659	Valencia	803 438	Spain
+	660	Vancouver	1 839 314	Canada
+	661	Varanasi	1 179 484	India
+	662	Veracruz	574 844	Mexico
+	663	Vienna	1 570 976	Austria
+	664	Vijayawada	886 519	India
+	665	Vilnius	542 014	Lithuania
+	666	Visakhapatnam	1 087 237	India
+	667	Vladivostok	584 496	Russia
+	668	Volgograd	1 010 221	Russia
+	669	Voronezh	837 946	Russia
+	670	Wahran	642 498	Algeria
+	671	Warangal	564 826	India
+	672	Warri	546 576	Nigeria
+	673	Warsaw	1 634 441	Poland
+	674	Washington	548 359	United States of America
+	675	Wenzhou	873 290	China
+	676	Winnipeg	632 857	Canada
+	677	Wroclaw	633 276	Poland
+	678	Wuhan	4 236 023	China
+	679	Wuhu	510 997	China
+	680	Wuxi	1 139 609	China
+	681	Xiamen	592 372	China
+	682	Xian	4 091 916	China
+	683	Xianggangdao	1 321 432	China
+	684	Xiangtan	676 218	China
+	685	Xianyang	1 055 317	China
+	686	Xingtai	639 839	China
+	687	Xining	770 872	China
+	688	Xinxiang	747 060	China
+	689	Xinyang	1 653 171	China
+	690	Xuzhou	1 231 240	China
+	691	Yancheng	631 805	China
+	692	Yangzhou	542 604	China
+	693	Yantai	740 249	China
+	694	Yaoundé	1 344 617	Cameroon
+	695	Yaroslavl	604 725	Russia
+	696	Yazd	505 037	Iran
+	697	Yekaterinburg	1 285 879	Russia
+	698	Yerevan	1 090 537	Armenia
+	699	Yingkou	600 352	China
+	700	Yogyakarta	653 124	Indonesia
+	701	Yokohama	3 603 710	Japan
+	702	Yuanlong	571 175	China
+	703	Yueyang	529 730	China
+	704	Zagreb	700 717	Croatia
+	705	Zahedan	570 389	Iran
+	706	Zapopan	1 003 742	Mexico
+	707	Zaporizhzhya	791 626	Ukraine
+	708	Zaragoza	658 186	Spain
+	709	Zaria	998 032	Nigeria
+	710	Zhangdian	673 696	China
+	711	Zhangjiakou	726 070	China
+	712	Zhangzhou	610 379	China
+	713	Zhanjiang	658 290	China
+	714	Zhengzhou	2 023 495	China
+	715	Zhenjiang	635 937	China
+	716	Zhuhai	513 953	China
+	717	Zhunmen	508 564	China
+	718	Zhuzhou	711 493	China
+	719	Zigong	691 930	China
