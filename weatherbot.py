@@ -1,6 +1,8 @@
 import re
 import nltk
 import weather
+import sentences
+import sentence
 import string
 from string import lower
 
@@ -18,7 +20,7 @@ for i in range(720) :
 cityfile.close()
 # citylist now contains a list of 719 major cities worldwide
 
-time = ''
+time = 'today'
 
 timefile = file("time.txt", "r")
 timelist = []
@@ -29,21 +31,22 @@ for i in range(10):
   timelist.append(day)
 timefile.close()
 #timelist contains the times like today, tomorrow, monday, etc.
-
+google_result = []
 while True :
   input = raw_input('Me > ')
   if input == 'exit' or input == 'quit' or input == 'bye':
     break
   
   # Tokenize the input string
-  input = input.split()
+  splitinput = input.split()
+  input = input.lower()
   
   # create a list to remove punctuations from 'input'
   trimmed_input = []
   print 'Bot > '
   
   #convert each token to lowercase and remove punctuations
-  for i in input :
+  for i in splitinput :
     i = re.sub('[^a-zA-Z0-9]+','', i)
     i = lower(i)
     trimmed_input.append(i)
@@ -58,34 +61,56 @@ while True :
       break
   
   # Weather report uses short weekday names. substitute below
+  newtime = ''
   if time == 'monday':
-    time = 'mon'
+    newtime = 'Mon'
   elif time == 'tuesday' :
-    time = 'tue'
+    newtime = 'Tue'
   elif time == 'wednesday' :
-    time = 'wed'
+    newtime = 'Wed'
   elif time == 'thursday' :
-    time = 'thu'
+    newtime = 'Thu'
   elif time == 'friday' :
-    time = 'fri'
+    newtime = 'Fri'
   elif time == 'saturday' :
-    time = 'sat'
+    newtime = 'Sat'
   elif time == 'sunday' :
-    time = 'sun'
+    newtime = 'Sun'
     
   # Below, we check if any token in the input matches a city name, and if so, set location to that city
-  for i in trimmed_input:
-    if i in citylist:
-      location = i
+  newlocation = False
+  for i in citylist:
+    if input.find(i) >= 0:
+      if location != i:
+	location = i
+	newlocation = True
       break
+  if location == '':
+    print 'City not found'
+
   if location != '':
-    # Call Google weather to get current weather conditions
-    google_result = weather.get_weather(location)
-  
-  # Print today's weather report. Replace this with code to deduce the user request
-    print "It is " + string.lower(google_result['current_conditions']['condition']) + " and " + google_result['current_conditions']['temp_c'] + "C now in " + location + ".\n\n"
+    if newlocation:
+      print 'Fetching weather information from Google...'
+      # Call Google weather to get current weather conditions
+      google_result = weather.get_weather(location)
+      
+    # Print today's weather report. Replace this with code to deduce the user request
+    if time == '' or time == 'today' :
+      printstring = sentence.sentence(google_result['current_conditions']['condition'], time)
+      print printstring, time
+    else :
+      if time == 'tomorrow':
+	printstring = sentence.sentence(google_result['forecasts'][1]['condition'], time)
+	print printstring, time
+      else:
+	found = False
+	for i in range(4):
+	  if google_result['forecasts'][i]['day_of_week'] == newtime:
+	    printstring = sentence.sentence(google_result['forecasts'][i]['condition'], time)
+	    print printstring, "on", time
+	    found = True
+	if not found:
+	  print "Forecast for " + time + " is not available currently."
     
-    print "Weather on " + google_result['forecasts'][0]['day_of_week']
-  
   else:
     print "What's the location?"
