@@ -1,7 +1,6 @@
 import re
 import nltk
 import weather
-import sentences
 import sentence
 import string
 from string import lower
@@ -10,7 +9,7 @@ conversation = []
 location = ''
 
 # Read names of cities from file
-cityfile = file("cities-final.txt","r")
+cityfile = file("cities.txt","r")
 citylist = []
 for i in range(720) :
   city = cityfile.readline()
@@ -31,7 +30,6 @@ for i in range(10):
   timelist.append(day)
 timefile.close()
 #timelist contains the times like today, tomorrow, monday, etc.
-google_result = []
 while True :
   input = raw_input('Me > ')
   if input == 'exit' or input == 'quit' or input == 'bye':
@@ -76,20 +74,32 @@ while True :
     newtime = 'Sat'
   elif time == 'sunday' :
     newtime = 'Sun'
-    
+  
+  prevlocation = location #We store previous location to avoid re-fetching data if the location hasn't been changed
+  
   # Below, we check if any token in the input matches a city name, and if so, set location to that city
   newlocation = False
   for i in citylist:
     if input.find(i) >= 0:
-      if location != i:
-	location = i
-	newlocation = True
+      location = i
       break
+  
+  
+  if location != prevlocation:
+    newlocation = True
+  
   if location == '':
-    print 'City not found'
-
+    if prevlocation == '':
+      print 'City not found'
+    else:
+      location = prevlocation
+      newlocation = False
+  
+  location = location.replace(' ','-') #Google requires a '-' in 2-word city names
+  
+  
   if location != '':
-    if newlocation:
+    if newlocation:	#If location hasn't changed, don't fetch data again. It's already available
       print 'Fetching weather information from Google...'
       # Call Google weather to get current weather conditions
       google_result = weather.get_weather(location)

@@ -2,7 +2,7 @@ from string import lower
 def sentence(condition, time):
   retstring = ''
   #print condition
-  confile = file("conditions1.txt","r")
+  confile = file("conditions.txt","r")
   tempconlist = []
   while True:
     con = confile.readline()
