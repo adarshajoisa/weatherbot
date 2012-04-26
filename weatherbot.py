@@ -11,8 +11,10 @@ location = ''
 # Read names of cities from file
 cityfile = file("cities.txt","r")
 citylist = []
-for i in range(720) :
+while True:
   city = cityfile.readline()
+  if city == '':
+    break
   city = city.rstrip('\n')
   city = lower(city)
   citylist.append(city)
@@ -23,8 +25,10 @@ time = 'today'
 
 timefile = file("time.txt", "r")
 timelist = []
-for i in range(10):
+while True:
   day = timefile.readline()
+  if day == '':
+    break
   day = day.rstrip('\n')
   day = lower(day)
   timelist.append(day)
