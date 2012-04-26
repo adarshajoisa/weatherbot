@@ -1,0 +1,16 @@
+Data formats:
+
+1. A file containing the combinations of keywords to look for in the input, separated by |. 1st item will be an ID.
+2. A file containing responses to each of the keyword combinations present in the first file. Use the ID to relate response to keywords
+3. A file containing list of data files, '|' separated.
+4. Any number of data files required for the application
+
+Algorithm:
+
+1. Read the keyword combinations file
+2. Read the response file and store in a dictionary with ID as the key
+3. Read the list file and store as a list
+4. Read input from user and try fetching response from the dictionary. Use appropriate data files as needed.
+5. Each input and corresponding output is to be stored in a list to provide context information
+
+TRY AND IMPROVISE THE ALGORITHM
