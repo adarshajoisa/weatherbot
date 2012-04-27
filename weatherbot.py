@@ -1,5 +1,4 @@
 import re
-import nltk
 import weather
 import sentence
 import string
