@@ -10,11 +10,10 @@ location = ''
 time = 'today'
 key = ''
 
-citylist = readfile('cities.txt')
-keylist = readfile('keywords.txt')
-timefile = readfile('time.txt')
-condlist = readfile('conditions.txt')
-
+citylist = readfile.readfile('cities.txt')
+keylist = readfile.readfile('keywords.txt')
+timelist = readfile.readfile('time.txt')
+condlist = readfile.readfile('conditions.txt')
 
 while True :
   input = raw_input('Me > ')
@@ -22,17 +21,20 @@ while True :
     break
   
   for i in keylist:
-    if i in input:
+    if i[0] in input:
       key = i
       break
   
+  fulltime = ''
   for i in timelist:
-    if i[0] in input:
-      if i[0] is not 'today' or i[0] is not 'tomorrow':
+    if lower(i[0]) in input:
+      if lower(i[0]) is not 'today' or lower(i[0]) is not 'tomorrow':
 	time = i[1]
+	fulltime = i[0]
 	break
       else:
 	time = i[0]
+	fulltime = i[0]
 	break
   
   prevlocation = location 
@@ -42,8 +44,8 @@ while True :
   newlocation = False
   
   for i in citylist:
-    if i in input:
-      location = i
+    if lower(i[0]) in input:
+      location = i[0]
       break
   
   if location is not prevlocation:
@@ -64,7 +66,22 @@ while True :
       # Call Google weather to get current weather conditions
       google_result = weather.get_weather(location)
   
-  
+    if time == '' or time == 'today' :
+	printstring = sentence.sentence(google_result['current_conditions']['condition'], time)
+	print printstring, fulltime
+    else :
+      if time == 'tomorrow':
+	printstring = sentence.sentence(google_result['forecasts'][1]['condition'], time)
+	print printstring, fulltime
+      else:
+	found = False
+	for i in range(4):
+	  if google_result['forecasts'][i]['day_of_week'] == time:
+	    printstring = sentence.sentence(google_result['forecasts'][i]['condition'], time)
+	    print printstring, "on", fulltime
+	    found = True
+	if not found:
+	  print "Forecast for " + time + " is not available currently."
   
   
   else:
