@@ -1,12 +1,12 @@
-def readfile(filename)
-  infile = file(filename, "r")
+from string import lower
+def readfile(filename):
+  infile = file(filename, 'r')
   datalist = []
   while True:
     data = infile.readline()
-    if data is '':
+    if data == '':	# data is '' doesn't work for some reason. using data == '' instead
       break
     data = data.rstrip('\n')
-    data = lower(data)
     data = data.split('/')
     datalist.append(data)
   infile.close()
