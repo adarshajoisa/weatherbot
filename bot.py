@@ -99,49 +99,24 @@ while True :
 	else:
 	  printstring = keytemplate[4] + keytemplate[0]
 	    
-      #if key in input:
-	#for i in google_result['forecasts']:
-	  #timecounter += 1
-	  #if key in i['condition']:
-	    #keyresult = True
-	    #print 'YO ho ho and a bottle of rum!'
-	    #break
-      #if keyresult:
-	#if timecounter is 1:
-	  #printstring = keytemplate[1] + keytemplate[0]
-	#elif timecounter is 2:
-	  #printstring = keytemplate[3] + keytemplate[0]
-	#else:
-	  #printstring = keytemplate[3] + keytemplate[0]
-	  #print timecounter
-      #else:
-	#if timecounter is 1:
-	  #printstring = keytemplate[2] + keytemplate[0]
-	#elif timecounter is 2:
-	  #printstring = keytemplate[4] + keytemplate[0]
-	#else:
-	  #printstring = keytemplate[4] + keytemplate[0]
-	  #print timecounter
       print printstring, fulltime
-    
-    else:
-  
-      if time == '' or time == 'today' :
-	  printstring = sentence.sentence(google_result['current_conditions']['condition'], time)
-	  print printstring, fulltime
-      else :
-	if time == 'tomorrow':
-	  printstring = sentence.sentence(google_result['forecasts'][1]['condition'], time)
-	  print printstring, fulltime
-	else:
-	  found = False
-	  for i in range(4):
-	    if google_result['forecasts'][i]['day_of_week'] == time:
-	      printstring = sentence.sentence(google_result['forecasts'][i]['condition'], time)
-	      print printstring, "on", fulltime
-	      found = True
-	  if not found:
-	    print "Forecast for " + time + " is not available currently."
+
+    if time == '' or time == 'today' :
+	printstring = sentence.sentence(google_result['current_conditions']['condition'], time)
+	print printstring, fulltime
+    else :
+      if time == 'tomorrow':
+	printstring = sentence.sentence(google_result['forecasts'][1]['condition'], time)
+	print printstring, fulltime
+      else:
+	found = False
+	for i in range(4):
+	  if google_result['forecasts'][i]['day_of_week'] == time:
+	    printstring = sentence.sentence(google_result['forecasts'][i]['condition'], time)
+	    print printstring, "on", fulltime
+	    found = True
+	if not found:
+	  print "Forecast for " + time + " is not available currently."
   
   
   else:
