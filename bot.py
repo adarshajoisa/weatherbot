@@ -16,11 +16,27 @@ citylist = readfile.readfile('cities.txt')
 keylist = readfile.readfile('keywords.txt')
 timelist = readfile.readfile('time.txt')
 condlist = readfile.readfile('conditions.txt')
+numlist = readfile.readfile('numbers.txt')
 
 while True :
   input = raw_input('Me > ')
   if input == 'exit' or input == 'quit' or input == 'bye':
     break
+  
+  currentstring = input.split()
+  conversation.append(currentstring)
+  
+  numdays = ''
+  if 'next' in currentstring:
+    numdays = currentstring[currentstring.index('next') + 1]
+    for i in numlist:
+      if numdays == i[0]:
+	numdays = i[1]
+	break
+    if re.match('[0-9]*$',numdays):
+      numdays = int(numdays)
+    else:
+      numdays = ''
   
   key = ''
   keytemplate = []
@@ -44,6 +60,14 @@ while True :
 	fulltime = i[0]
 	break
   
+  if numdays != '':
+    if numdays > 4:
+      print 'Forecast is available only for the next 4 days.'
+    else:
+      time = ''
+      fulltime = ''
+      count = numdays
+      
   prevlocation = location 
   #We store previous location to avoid re-fetching data if the location hasn't been changed
   
@@ -68,6 +92,8 @@ while True :
       newlocation = False
   
   location = location.replace(' ','-') #Google requires a '-' in 2-word city names
+  result = False
+  
   
   if location is not '':
     if newlocation:	#If location hasn't changed, don't fetch data again. It's already available
@@ -75,33 +101,61 @@ while True :
       # Call Google weather to get current weather conditions
       google_result = weather.get_weather(location)
     
+    printed = False
+    
+    
     if key is not '':
       printstring = ''
       timecounter = 0
       
-      
-      keyresult = False
-      if time != 'today' and time != 'tomorrow':
+      print numdays
+      day_of_week = ''
+      condition = ''
+      if numdays != '':
 	for i in google_result['forecasts']:
-	  if i['day_of_week'] == time:
-	    if key in lower(i['condition']):
-	      printstring = keytemplate[3] + keytemplate[0] + ' on'
-	    else:
-	      printstring = keytemplate[4] + keytemplate[0] + ' on'
-      elif time == 'today':
-	if key in lower(google_result['current_conditions']['condition']):
-	  printstring = keytemplate[1] + keytemplate[0]
+	  count -= 1
+	  if count < 0:
+	    break
+	  print 'passing through forecasts: ', i['day_of_week'], i['condition']
+	  if key in lower(i['condition']):
+	    result = True
+	    day_of_week = i['day_of_week']
+	    condition = i['condition']
+	    break
+	
+	for i in timelist:
+	  if i[0] == day_of_week:
+	    fulltime = i[1]
+	if result:
+	  printstring = keytemplate[3] + keytemplate[0] + ' on ' + fulltime
 	else:
-	  printstring = keytemplate[2] + keytemplate[0]
-      elif time == 'tomorrow':
-	if key in lower(google_result['forecasts'][1]['condition']):
-	  printstring = keytemplate[3] + keytemplate[0]
-	else:
-	  printstring = keytemplate[4] + keytemplate[0]
+	  printstring = keytemplate[4] + keytemplate[0] + ' in the next ' + str(numdays) + ' days.'
+	
+	print printstring
+	printed = True
 	    
-      print printstring, fulltime
+      if not printed:
+	if time != 'today' and time != 'tomorrow':
+	  for i in google_result['forecasts']:
+	    if i['day_of_week'] == time:
+	      if key in lower(i['condition']):
+		printstring = keytemplate[3] + keytemplate[0] + ' on'
+	      else:
+		printstring = keytemplate[4] + keytemplate[0] + ' on'
+	elif time == 'today':
+	  if key in lower(google_result['current_conditions']['condition']):
+	    printstring = keytemplate[1] + keytemplate[0]
+	  else:
+	    printstring = keytemplate[2] + keytemplate[0]
+	elif time == 'tomorrow':
+	  if key in lower(google_result['forecasts'][1]['condition']):
+	    printstring = keytemplate[3] + keytemplate[0]
+	  else:
+	    printstring = keytemplate[4] + keytemplate[0]
+	      
+	print printstring, fulltime
 
-    if time == '' or time == 'today' :
+    elif time == '' or time == 'today' :
 	printstring = sentence.sentence(google_result['current_conditions']['condition'], time)
 	print printstring, fulltime
     else :
@@ -117,7 +171,7 @@ while True :
 	    found = True
 	if not found:
 	  print "Forecast for " + time + " is not available currently."
-  
+
   
   else:
     print 'What\'s the location?'

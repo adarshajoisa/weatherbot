@@ -1,18 +1,20 @@
-1/sunny
-2/thunder
-3/rain
-4/showers
-5/snow
-6/storm
-7/cloud
-8/fog
-9/drizzle
-10/clear
-11/mist
-12/sleet
-13/icy
-14/dust
-15/smoke
-16/haze
-17/flurries
-18/hail
+sunny/It is/ It's not /It may be /It may not be 
+thunder/You have /You don't have /You may have /You may not have 
+rain/You have /You don't have /You may have /You may not have 
+showers/You have /You don't have /You may have /You may not have 
+snow/You have /You don't have /You may have /You may not have 
+storm/You have a /You don't have a /You may have a /You may not have a 
+cloud/You have /You don't have /You may have /You may not have 
+fog/You have /You don't have /You may have /You may not have 
+drizzle/You have /You don't have /You may have /You may not have 
+clear/It is/ It's not /It may be /It may not be 
+mist/You have /You don't have /You may have /You may not have 
+sleet/You have /You don't have /You may have /You may not have 
+icy/It is/ It's not /It may be /It may not be 
+dust/You have /You don't have /You may have /You may not have 
+smoke/You have /You don't have /You may have /You may not have 
+haze/You have /You don't have /You may have /You may not have 
+flurries/You have /You don't have /You may have /You may not have 
+hail/You have /You don't have /You may have /You may not have 
+sun/You have /You don't have /You may have /You may not have 
+ice/You have /You don't have /You may have /You may not have 
