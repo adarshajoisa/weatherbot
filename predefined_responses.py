@@ -3,6 +3,7 @@
 File: predefined_responses.py
 Reads input-response pairs from predefined_responses.txt, takes input from the user and gives an appropriate response
 '''
+import re
 def respond(inputstring):
   
   # create a dictionary of input:responses
@@ -20,7 +21,8 @@ def respond(inputstring):
   
   response = ''
   inputkey = ''
-  inputtokens = inputstring.split()
+  inputtokens = re.sub('[^a-zA-Z0-9 ]+','', inputstring)
+  inputtokens = inputtokens.split()
   
   # Search for response for the given input
   count = 0

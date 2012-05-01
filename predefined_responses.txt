@@ -4,4 +4,6 @@ nope/ok... I only answer questions related to weather.
 yes please/What would you like to know?
 fuck you/Don't  be rude. I'm designed to answer weather queries, not respond to insults.
 hi whats your name/You can call me anything. My only job is to talk about weather. Do you want to talk about that?
-hello whats your name/You can call me anything. My only job is to talk about weather. Do you want to talk about that?
+talking to you is useless then/You can always type 'quit' if you feel so
+you suck/piss off!!
+fine/ok
