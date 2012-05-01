@@ -56,6 +56,12 @@ def chat():
     # read input from user
     input = raw_input('Me > ')
     if input in exitlist:
+      if input == 'ok':
+	exitans = raw_input("Do you want to quit? (y/n)")
+	if exitans in ('y','Y','Yes','YES','yes'):
+	  break
+	else:
+	  continue
       break
       
     currentstring = input.split()
@@ -262,6 +268,7 @@ def chat():
   print 'Writing new entries to database...'
   datafile = file('predefined_responses.txt', 'a')
   for i in responsedict.keys():
+    i = re.sub('[^a-zA-Z0-9 ]+','', i)
     string = i + '/' + responsedict[i] + '\n'
     datafile.write(string)
   print 'Ending the program...'

@@ -1,3 +1,5 @@
 hi/hi!
-how are you?/I am good. Would you like to know about the weather now?
+how are you/I am good. Would you like to know about the weather now?
 nope/ok... I only answer questions related to weather.
+yes, please!/What would you like to know?
+fuck you/Don't  be rude. I'm designed to answer weather queries, not respond to insults.
