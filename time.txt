@@ -1,9 +1,9 @@
 today
 tomorrow
-monday
-tuesday
-wednesday
-thursday
-friday
-saturday
-sunday
+monday/Mon
+tuesday/Tue
+wednesday/Wed
+thursday/Thu
+friday/Fri
+saturday/Sat
+sunday/Sun

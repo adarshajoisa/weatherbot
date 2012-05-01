@@ -9,8 +9,9 @@ conversation = []
 location = ''
 time = 'today'
 key = ''
-keytemplate = ''
+keytemplate = []
 fulltime = ''
+numdays = ''
 
 citylist = readfile.readfile('cities.txt')
 keylist = readfile.readfile('keywords.txt')
@@ -26,7 +27,6 @@ while True :
   currentstring = input.split()
   conversation.append(currentstring)
   
-  numdays = ''
   if 'next' in currentstring:
     numdays = currentstring[currentstring.index('next') + 1]
     for i in numlist:
@@ -38,8 +38,9 @@ while True :
     else:
       numdays = ''
   
-  key = ''
-  keytemplate = []
+  if 'weather' in currentstring:
+    key = ''
+    keytemplate = []
   # get key from input
   for i in keylist:
     if i[0] in input:
@@ -51,6 +52,7 @@ while True :
   
   for i in timelist:
     if lower(i[0]) in input:
+      numdays = ''
       if lower(i[0]) != 'today' and lower(i[0]) != 'tomorrow':
 	time = i[1]
 	fulltime = i[0]
@@ -70,6 +72,7 @@ while True :
       
   prevlocation = location 
   #We store previous location to avoid re-fetching data if the location hasn't been changed
+  
   
   # Below, we check if any token in the input matches a city name, and if so, set location to that city
   newlocation = False
@@ -108,7 +111,6 @@ while True :
       printstring = ''
       timecounter = 0
       
-      print numdays
       day_of_week = ''
       condition = ''
       if numdays != '':
@@ -116,7 +118,6 @@ while True :
 	  count -= 1
 	  if count < 0:
 	    break
-	  print 'passing through forecasts: ', i['day_of_week'], i['condition']
 	  if key in lower(i['condition']):
 	    result = True
 	    day_of_week = i['day_of_week']
@@ -124,8 +125,11 @@ while True :
 	    break
 	
 	for i in timelist:
-	  if i[0] == day_of_week:
-	    fulltime = i[1]
+	  if i[0] != 'today' and i[0] != 'tomorrow':
+	    if i[1] == day_of_week:
+	      fulltime = i[0]
+	      break
+	
 	if result:
 	  printstring = keytemplate[3] + keytemplate[0] + ' on ' + fulltime
 	else:
@@ -143,11 +147,13 @@ while True :
 	      else:
 		printstring = keytemplate[4] + keytemplate[0] + ' on'
 	elif time == 'today':
+	  fulltime = time
 	  if key in lower(google_result['current_conditions']['condition']):
 	    printstring = keytemplate[1] + keytemplate[0]
 	  else:
 	    printstring = keytemplate[2] + keytemplate[0]
 	elif time == 'tomorrow':
+	  fulltime = time
 	  if key in lower(google_result['forecasts'][1]['condition']):
 	    printstring = keytemplate[3] + keytemplate[0]
 	  else:
