@@ -26,6 +26,7 @@ def chat():
   condtemp = False
   condkey = False
   condresponse = False
+  foundinfo = False
 
   # global variables
   conversation = []
@@ -70,6 +71,7 @@ def chat():
     # Start searching input for each of the keywords
 
     if 'next' in currentstring:
+      foundinfo = True
       condnext = True
       condtime = False
       numdays = currentstring[currentstring.index('next') + 1]
@@ -83,6 +85,7 @@ def chat():
 	numdays = ''
     
     if 'weather' in currentstring:
+      foundinfo = True
       condweather = True
       condkey = False
       condtemp = False
@@ -92,6 +95,7 @@ def chat():
     # get key from input
     for i in keylist:
       if i[0] in input:
+	foundinfo = True
 	condkey = True
 	condweather = False
 	condtemp = False
@@ -102,6 +106,7 @@ def chat():
     # get time from input
       for i in timelist:
 	if lower(i[0]) in input:
+	  foundinfo = True
 	  condtime = True
 	  numdays = ''
 	  if lower(i[0]) != 'today' and lower(i[0]) != 'tomorrow':
@@ -127,6 +132,7 @@ def chat():
     # get location from input
     for i in citylist:
       if lower(i[0]) in input:
+	foundinfo = True
 	condlocation = True
 	location = i[0]
 	break
@@ -151,9 +157,11 @@ def chat():
     
     # get temperature from input
     if 'temperature' in currentstring:
+      foundinfo = True
       condtemp = True
 
-    if not( condtemp or condlocation or condkey or condnext or condtime or condweather ):
+    # User gave no infomation about weather. Switching to general predefined response based chat
+    if not (foundinfo or ( condtemp or condlocation or condkey or condnext or condtime or condweather )):
       response = predefined_responses.respond(input)
       if response == '':
 	print "I don't know what that means. If I asked you the same question, what would you reply?"
@@ -268,8 +276,8 @@ def chat():
   print 'Writing new entries to database...'
   datafile = file('predefined_responses.txt', 'a')
   for i in responsedict.keys():
-    i = re.sub('[^a-zA-Z0-9 ]+','', i)
-    string = i + '/' + responsedict[i] + '\n'
+    trimmedi = re.sub('[^a-zA-Z0-9 ]+','', i)
+    string = trimmedi + '/' + responsedict[i] + '\n'
     datafile.write(string)
   print 'Ending the program...'
   print 'Bye!'

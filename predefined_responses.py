@@ -20,20 +20,49 @@ def respond(inputstring):
   
   response = ''
   inputkey = ''
+  inputtokens = inputstring.split()
   
   # Search for response for the given input
+  count = 0
+  maxcount = 0
+  maxkey = ''
+  maxtokens = []
   for i in responsedict.keys():
     tokens = i.split()
     fullmatch = True
-    for j in tokens:
-      if j in inputstring:
-	continue
-      else:
-	fullmatch = False
+    count = 0
+    for j in inputtokens:
+      for k in tokens:
+	if (j in k) or (k in j):
+	  count += 1
+	  if count > maxcount:
+	    maxcount = count
+	    maxkey = i
+	    maxtokens = tokens
+	  continue
+	else:
+	  fullmatch = False
+    
+    
+    #for j in tokens:
+      #if j in inputstring:
+	#count += 1
+	#if count > maxcount:
+	  #maxcount = count
+	  #maxkey = i
+	  #maxtokens = tokens
+	#continue
+      #else:
+	#fullmatch = False
+    
     if fullmatch:
       inputkey = i
       break
   
+  if not fullmatch:
+    if maxcount > 0 and maxcount > len(inputtokens)/2:
+      inputkey = maxkey
+      
   if inputkey != '':
     response = responsedict[inputkey]
   else:

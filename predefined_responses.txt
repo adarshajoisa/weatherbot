@@ -1,5 +1,7 @@
 hi/hi!
 how are you/I am good. Would you like to know about the weather now?
 nope/ok... I only answer questions related to weather.
-yes, please!/What would you like to know?
+yes please/What would you like to know?
 fuck you/Don't  be rude. I'm designed to answer weather queries, not respond to insults.
+hi whats your name/You can call me anything. My only job is to talk about weather. Do you want to talk about that?
+hello whats your name/You can call me anything. My only job is to talk about weather. Do you want to talk about that?
