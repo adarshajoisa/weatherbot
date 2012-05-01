@@ -4,10 +4,13 @@ File: predefined_responses.py
 Reads input-response pairs from predefined_responses.txt, takes input from the user and gives an appropriate response
 '''
 import re
-def respond(inputstring):
+def respond(inputstring, currentresponsedict):
   
   # create a dictionary of input:responses
   responsedict = {}
+  
+  for i in currentresponsedict.keys():
+    responsedict[i] = currentresponsedict[i]
   # read responses from file
   data = file('predefined_responses.txt', 'r')
   while True:
@@ -35,7 +38,7 @@ def respond(inputstring):
     count = 0
     for j in inputtokens:
       for k in tokens:
-	if (j in k) or (k in j):
+	if k == j:
 	  count += 1
 	  if count > maxcount:
 	    maxcount = count
@@ -62,6 +65,8 @@ def respond(inputstring):
       break
   
   if not fullmatch:
+    print inputtokens, maxtokens
+    print maxcount, len(inputtokens)
     if maxcount > 0 and maxcount > len(inputtokens)/2:
       inputkey = maxkey
       

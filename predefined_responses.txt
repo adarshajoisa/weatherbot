@@ -7,3 +7,5 @@ hi whats your name/You can call me anything. My only job is to talk about weathe
 talking to you is useless then/You can always type 'quit' if you feel so
 you suck/piss off!!
 fine/ok
+who created you/I was created by Adarsha Joisa. You can find my source code at https://github.com/adarshajoisa/weatherbot
+who am i/You are a user.

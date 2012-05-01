@@ -53,7 +53,7 @@ def chat():
 
   # Start main loop
   while True :
-    
+    foundinfo = False
     # read input from user
     input = raw_input('Me > ')
     if input in exitlist:
@@ -161,8 +161,8 @@ def chat():
       condtemp = True
 
     # User gave no infomation about weather. Switching to general predefined response based chat
-    if not (foundinfo or ( condtemp or condlocation or condkey or condnext or condtime or condweather )):
-      response = predefined_responses.respond(input)
+    if not foundinfo:
+      response = predefined_responses.respond(input, responsedict)
       if response == '':
 	print "I don't know what that means. If I asked you the same question, what would you reply?"
 	responseinput = raw_input('Me > ')
