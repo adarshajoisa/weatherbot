@@ -1,6 +1,8 @@
-"""
+'''
+
+File: weather.py
 Fetches weather reports from Google Weather
-"""
+'''
 
 import urllib2, string
 from xml.dom import minidom

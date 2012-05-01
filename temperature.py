@@ -1,4 +1,6 @@
 '''
+
+File: temperature.py
 replies to temperature related queries
 '''
 

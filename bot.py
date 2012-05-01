@@ -1,3 +1,12 @@
+'''
+
+File: bot.py
+Does all the major work of the chat bot.
+Reads user input, searches for weather-related keywords. If found, gets weather conditions and prepares a response
+If not found, calls predefined_responses.py to generate predefined responses
+'''
+
+
 # imports
 import re
 import predefined_responses

@@ -1,4 +1,6 @@
 '''
+
+File: sentence.py
 creates responses by getting data from conditions.txt
 '''
 

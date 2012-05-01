@@ -1,3 +1,8 @@
+'''
+
+File: predefined_responses.py
+Reads input-response pairs from predefined_responses.txt, takes input from the user and gives an appropriate response
+'''
 def respond(inputstring):
   
   # create a dictionary of input:responses
