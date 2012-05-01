@@ -1,5 +1,4 @@
 def respond(inputstring):
-  print 'This is a predefined response'
   
   # create a dictionary of input:responses
   responsedict = {}
