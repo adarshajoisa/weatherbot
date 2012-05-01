@@ -20,10 +20,12 @@ def bot():
   timelist = readfile.readfile('time.txt')
   condlist = readfile.readfile('conditions.txt')
   numlist = readfile.readfile('numbers.txt')
+  exitlist = ['exit', 'quit', 'bye', 'ok']
 
+  print 'Hello! You can ask me questions about the weather in any major city in the world. What would you like to know?'
   while True :
     input = raw_input('Me > ')
-    if input == 'exit' or input == 'quit' or input == 'bye':
+    if input in exitlist:
       break
     
     currentstring = input.split()
@@ -81,11 +83,16 @@ def bot():
     newlocation = False
     
     # get location from input
+    foundLocation = False
     for i in citylist:
       if lower(i[0]) in input:
 	location = i[0]
+	foundLocation = True
 	break
     
+    if not foundLocation:
+      if location != '':
+	print "I didn't find any city name in your input. I'll get you information about " + location
     # find if a new location has been mentioned. if not, don't fetch data again
     if location is not prevlocation:
       newlocation = True
@@ -187,3 +194,6 @@ def bot():
     
     else:
       print 'What\'s the location?'
+  #end of outermost while loop
+  print 'ending the program...'
+  print 'bye!'
