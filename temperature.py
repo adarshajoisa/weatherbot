@@ -1,3 +1,7 @@
+'''
+replies to temperature related queries
+'''
+
 def temperature(result, day):
   retstring = ''
   if day == 'today':

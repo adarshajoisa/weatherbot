@@ -16,6 +16,7 @@ def chat():
   condlocation = False
   condtemp = False
   condkey = False
+  condresponse = False
 
   # global variables
   conversation = []
@@ -26,6 +27,7 @@ def chat():
   keytemplate = []
   fulltime = ''
   numdays = ''
+  responsedict = {} 	# Dictionary to hold all inputs without predefined responses. This dictionary will be written into predefined_responses.txt before exiting the program.
 
 
   # read data files
@@ -117,13 +119,14 @@ def chat():
     # find if a new location has been mentioned. if not, don't fetch data again
     if location != prevlocation:
       newlocation = True
+      condlocation = True
       prevlocation = location
     else:
       newlocation = False
     
     if location is '':
       if prevlocation is '':
-	print 'City not found'
+	condlocation = False
       else:
 	location = prevlocation
 	newlocation = False
@@ -134,11 +137,18 @@ def chat():
     # get temperature from input
     if 'temperature' in currentstring:
       condtemp = True
+
+    if not( condtemp or condlocation or condkey or condnext or condtime or condweather ):
+      response = predefined_responses.respond(input)
+      if response == '':
+	print "I don't know what that means. If I asked you the same question, what would you reply?"
+	responseinput = raw_input('Me > ')
+	responsedict[input] = responseinput
+      else:
+	print response
+      continue
     
-    if not( condtemp or condlocation or condkey or condlist or condnext or condtime or condweather ):
-      predefined_responses.respond()
-    
-    if location is not '':
+    if condlocation:
       if newlocation:	#If location hasn't changed, don't fetch data again. It's already available
 	print 'Fetching weather information from Google...'
 	# Call Google weather to get current weather conditions
@@ -240,7 +250,12 @@ def chat():
   # End of outermost while loop.
 
   # Print message before exiting program
-  print 'ending the program...'
-  print 'bye!'
+  print 'Writing new entries to database...'
+  datafile = file('predefined_responses.txt', 'a')
+  for i in responsedict.keys():
+    string = i + '/' + responsedict[i] + '\n'
+    datafile.write(string)
+  print 'Ending the program...'
+  print 'Bye!'
   
 # End of function chat()

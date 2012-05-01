@@ -1,3 +1,7 @@
+'''
+creates responses by getting data from conditions.txt
+'''
+
 from string import lower
 def sentence(condition, time):
   retstring = ''

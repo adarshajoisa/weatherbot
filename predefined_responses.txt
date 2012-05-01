@@ -1,1 +1,3 @@
 hi/hi!
+how are you?/I am good. Would you like to know about the weather now?
+nope/ok... I only answer questions related to weather.

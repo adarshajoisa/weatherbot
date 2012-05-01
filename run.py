@@ -1,2 +1,2 @@
 import bot
-bot.bot()
+bot.chat()

@@ -1,3 +1,7 @@
+'''
+reads data from a file and puts it into a list
+'''
+
 from string import lower
 def readfile(filename):
   infile = file(filename, 'r')
