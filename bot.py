@@ -50,7 +50,7 @@ while True :
       break
   
   # get time from input
-  
+
   for i in timelist:
     if lower(i[0]) in input:
       numdays = ''
@@ -60,9 +60,11 @@ while True :
 	break
       else:
 	time = i[0]
-	fulltime = i[0]
+	fulltime = time
 	break
-  
+  if fulltime == '':
+    fulltime = time
+
   if numdays != '':
     if numdays > 4:
       print 'Forecast is available only for the next 4 days.'
@@ -70,7 +72,6 @@ while True :
       time = ''
       fulltime = ''
       count = numdays
-      
   prevlocation = location 
   #We store previous location to avoid re-fetching data if the location hasn't been changed
   
@@ -134,7 +135,6 @@ while True :
 	    if i[1] == day_of_week:
 	      fulltime = i[0]
 	      break
-	
 	if result:
 	  printstring = keytemplate[3] + keytemplate[0] + ' on ' + fulltime
 	else:
@@ -168,7 +168,7 @@ while True :
 
     elif time == '' or time == 'today' :
 	printstring = sentence.sentence(google_result['current_conditions']['condition'], time)
-	print printstring, fulltime
+	print printstring, fulltime,  google_result['current_conditions']['humidity'], google_result['current_conditions']['wind_condition']
     else :
       if time == 'tomorrow':
 	printstring = sentence.sentence(google_result['forecasts'][1]['condition'], time)

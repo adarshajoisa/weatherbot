@@ -1,4 +1,4 @@
 weatherbot
 ==========
 
-A chat bot to query about weather from google weather api
+A chat bot to query about weather from google weather api using natural language queries (english)
