@@ -65,8 +65,6 @@ def respond(inputstring, currentresponsedict):
       break
   
   if not fullmatch:
-    print inputtokens, maxtokens
-    print maxcount, len(inputtokens)
     if maxcount > 0 and maxcount > len(inputtokens)/2:
       inputkey = maxkey
       

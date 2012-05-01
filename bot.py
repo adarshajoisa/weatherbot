@@ -27,6 +27,7 @@ def chat():
   condkey = False
   condresponse = False
   foundinfo = False
+  condtrain = False
 
   # global variables
   conversation = []
@@ -54,6 +55,7 @@ def chat():
   # Start main loop
   while True :
     foundinfo = False
+    condtrain = False
     # read input from user
     input = raw_input('Me > ')
     if input in exitlist:
@@ -69,6 +71,23 @@ def chat():
     conversation.append(currentstring)
     
     # Start searching input for each of the keywords
+    
+    if input == 'train':
+      condtrain = True
+      print 'Entering training mode. Enter input and response seperated by a "/": input/response. Type "exit" to quit training mode'
+      while True:
+	traininput = raw_input('>')
+	if traininput == 'exit':
+	  break
+	if traininput.find('/') < 0:
+	  print 'Format error: use input/response'
+	  continue
+	traininput = traininput.split('/')
+	responsedict[traininput[0]] = traininput[1]
+    
+    if condtrain:
+      continue
+    
 
     if 'next' in currentstring:
       foundinfo = True
@@ -273,7 +292,11 @@ def chat():
   # End of outermost while loop.
 
   # Print message before exiting program
-  print 'Writing new entries to database...'
+  dictcount = 0
+  for i in responsedict:
+    dictcount += 1
+  if dictcount > 0:
+    print 'Writing new entries to database...'
   datafile = file('predefined_responses.txt', 'a')
   for i in responsedict.keys():
     trimmedi = re.sub('[^a-zA-Z0-9 ]+','', i)
