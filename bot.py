@@ -2,6 +2,7 @@ import re
 import weather
 import sentence
 import readfile
+import temperature
 import string
 from string import lower
 
@@ -103,6 +104,10 @@ while True :
       print 'Fetching weather information from Google...'
       # Call Google weather to get current weather conditions
       google_result = weather.get_weather(location)
+    
+    if 'temperature' in currentstring:
+      print temperature.temperature(google_result, time)
+      continue
     
     printed = False
     
