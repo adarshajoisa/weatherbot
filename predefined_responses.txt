@@ -1,14 +1,39 @@
-hi/hi!
-how are you/I am good. Would you like to know about the weather now?
-nope/ok... I only answer questions related to weather.
-yes please/What would you like to know?
-fuck you/Don't  be rude. I'm designed to answer weather queries, not respond to insults.
-hi whats your name/You can call me anything. My only job is to talk about weather. Do you want to talk about that?
-talking to you is useless then/You can always type 'quit' if you feel so
-you suck/piss off!!
-fine/ok
-who created you/I was created by Adarsha Joisa. You can find my source code at https://github.com/adarshajoisa/weatherbot
-who am i/You are a user.
-whats the answer to the ultimate question of life the universe and everything/42
-can you play music/I am a piece of software. I cannot play any instrument.
-I study at pesit/Oh my god! Your life must be pathetic!
+hi|hi!
+how are you|I am good. Would you like to know about the weather now?
+nope|ok... I only answer questions related to weather.
+yes please|What would you like to know?
+fuck you|Don't  be rude. I'm designed to answer weather queries, not respond to insults.
+hi whats your name|You can call me anything. My only job is to talk about weather. Do you want to talk about that?
+talking to you is useless then|You can always type 'quit' if you feel so
+you suck|piss off!!
+fine|ok
+who created you|I was created by Adarsha Joisa.
+who am i|You are a user.
+whats the answer to the ultimate question of life the universe and everything|42
+can you play music|I am a piece of software. I cannot play any instrument.
+I study at pesit|Oh my god! Your life must be pathetic!
+who is adarsh|If you mean Adarsha Joisa, he is my creator
+Do you watch movies|no, I'm a bot.
+Who is adarsha joisa|Adarsha Joisa is my creator
+do you listen to music|No, i'm a bot. I don't see the need to listen to music.
+what kind of music do you like|I don't listen to music
+who are your parents|I was created by Adarsha Joisa.
+what are you|I am a program designed to answer weather related queries.
+how do i use you|You can ask me a question about weather. You must include a city name, and optionally a day of week. You can also ask questions like 'will i have rain tomorrow in new york?' or 'what'll be the temperature in london tomorrow?'
+hello|hi, what do you like to know about weather?
+nothing particular|then you're talking to the wrong bot!
+no|ok,,
+what are your views on|Does it matter? I'm designed to answer weather queries, not ponder about useless stuff.
+what do you think about politics|Politics are for fools. I tend not to think about it.
+who are you|I am a chat bot designed to answer weather queries
+whats up|ask me about the weather, you idiot!
+help me|I'm simple enough to talk to. Just ask anthing about the weather and i'll try to answer it. Remember that i don't have a magical way of knowing where you stay, so please mention the city as well.
+I love you|That's ok, but remember, you can't have sex with me. I'm a computer program.
+will there be earthquake in russia| maybe!
+will there be earthquake in india|no, there won't be
+who is the president of united states|Barack Obama
+you motherfucking dickhead|fuck off!
+when do you drink sprite|I'm a bot, I don't drink anything.
+where is pesit|pesit is in bangalore.
+who are you|I am a bot.
+who are you|I am a weather bot.
