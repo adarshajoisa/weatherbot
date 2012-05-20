@@ -5,7 +5,6 @@ yes please|What would you like to know?
 fuck you|Don't  be rude. I'm designed to answer weather queries, not respond to insults.
 hi whats your name|You can call me anything. My only job is to talk about weather. Do you want to talk about that?
 talking to you is useless then|You can always type 'quit' if you feel so
-you suck|piss off!!
 fine|ok
 who created you|I was created by Adarsha Joisa.
 who am i|You are a user.
@@ -39,3 +38,5 @@ who are you|I am a bot.
 who are you|I am a weather bot.
 are you human|No, I am a computer program designed to emulate intelligence.
 will it be holiday|yes
+todya|Did you mean today?
+yo boy whassup|nothing much, you want to know about the weather?
