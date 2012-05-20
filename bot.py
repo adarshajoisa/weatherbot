@@ -103,8 +103,9 @@ def chat():
       continue
     
 
+
     for i in countrylist:
-      if i[0] in currentstring:
+      if lower(i[0]) in lower(input):
 	printstr = 'Which city in ' + i[0] + '?'
 	condcountry = True
 	foundinfo = True
