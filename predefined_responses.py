@@ -18,7 +18,7 @@ def respond(inputstring, currentresponsedict):
     if line == '':
       break
     line = line.rstrip('\n')
-    line = line.split('/')
+    line = line.split('|')
     responsedict[line[0]] = line[1]
   # responsedict now contains all the knows input/response pairs
   
@@ -63,7 +63,7 @@ def respond(inputstring, currentresponsedict):
     if fullmatch:
       inputkey = i
       break
-  
+    
   if not fullmatch:
     if maxcount > 0 and maxcount > len(inputtokens)/2:
       inputkey = maxkey

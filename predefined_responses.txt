@@ -37,3 +37,5 @@ when do you drink sprite|I'm a bot, I don't drink anything.
 where is pesit|pesit is in bangalore.
 who are you|I am a bot.
 who are you|I am a weather bot.
+are you human|No, I am a computer program designed to emulate intelligence.
+will it be holiday|yes
