@@ -1,5 +1,9 @@
 *.py[co]
 
+# Ignore logfile and binaries
+logfile.log
+weather.pyc
+
 # Packages
 *.egg
 *.egg-info
