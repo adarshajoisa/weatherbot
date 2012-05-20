@@ -31,6 +31,7 @@ def chat():
   foundinfo = False
   condtrain = False
   condcountry = False
+  condspellcheck = True
 
   # global variables
   conversation = []
@@ -76,11 +77,27 @@ def chat():
 	else:
 	  continue
       break
-      
-    corrected_input = spellcheck.correct(input)
-    if corrected_input != input:
-      print 'corrected the input to: \"' + corrected_input + '\"'
-      input = corrected_input
+    
+    if input == 'disable spellcheck':
+      condspellcheck = False
+      continue
+    
+    if input == 'enable spellcheck':
+      condspellcheck = True
+      continue
+    
+    condcorrected = False
+    if condspellcheck:
+      corrected_input = ''
+      for i in input.split():
+	str = spellcheck.correct(i)
+	if str != i:
+	  condcorrected = True
+	corrected_input += str + ' '
+      if condcorrected:
+	print 'did you mean: \"' + corrected_input + '\"?'
+	input = corrected_input
+    
     currentstring = input.split()
     conversation.append(currentstring)
     
@@ -242,6 +259,9 @@ def chat():
 	logstr += printstr
 	# Call Google weather to get current weather conditions
 	google_result = weather.get_weather(location)
+	if google_result == {}:
+	  print 'Could not get data from google.'
+	  continue
       
       
   # We have a valid location. Get further information
