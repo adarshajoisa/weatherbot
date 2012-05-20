@@ -234,3 +234,127 @@ Entering training mode. Enter input and response seperated by a "|": input|respo
 
 Me > quit
 Bot > Writing new entries to database...
+
+Hello! You can ask me questions about the weather in any major city in the world. What would you like to know?
+Me > how's weather in bangalore today?
+Bot > Fetching weather information from Google...It is cloudy today. Humidity: 39% 
+Me > whats' the temperature tomorrow?
+Bot > Temperature may be between 70 and 93 tomorrow.
+Me > will it be sunny in the next 3 days?
+Bot > It may be sunny on thursday
+Me > friday?
+Bot > It may be sunny on friday
+Me > will i have cloud on friday?
+Bot > You may not have cloud on friday
+Me > train
+Bot > 
+Entering training mode. Enter input and response seperated by a "|": input|response. Type "exit" to quit training mode
+
+Me > are you human?
+Bot > I am a weather bot.
+Me > exit
+Bot > Writing new entries to database...
+
+Hello! You can ask me questions about the weather in any major city in the world. What would you like to know?
+Me > what's the weather in london today?
+Bot > Fetching weather information from Google...It is mostly cloudy today. Humidity: 87% Wind: N at 4 mph
+Me > what's the temperature?
+Bot > Temperature is between 45 and 61 today. It is 46 now. 
+Me > tomorrow?
+Bot > Temperature may be between 41 and 55 tomorrow.
+Me > will it be sunny tomorrow?
+Bot > It may not be sunny tomorrow
+Me > in the next 3 days?
+Bot > It may be sunny on sunday
+Me > will it be sunny dayaftr?
+Bot > It may be sunny on sunday
+Me > will it be holiday?
+Bot > I don't know what that means. If I asked you the same question, what would you reply?
+Me > yes
+Me > will it be a holiday?
+Bot > yes
+Me > will it rain tomorrow?
+Bot > You may have rain tomorrow
+Me > quit
+Bot > Writing new entries to database...
+
+Hello! You can ask me questions about the weather in any major city in the world. What would you like to know?
+Me > what's the weather in bangalore today?
+Bot > Fetching weather information from Google...It is clear today. Humidity: 39% Wind: W at 7 mph
+Me > temperature tomorrow?
+Bot > Temperature may be between 73 and 95 tomorrow.
+Me > today
+Bot > Temperature is between 73 and 97 today. It is 84 now. 
+Me > will it rain in the next 3 days?
+Bot > You may not have rain in the next 3 days.
+Me > quit
+Bot > 
+
+Hello! You can ask me questions about the weather in any major city in the world. What would you like to know?
+Me > rain in london today?
+Bot > Fetching weather information from Google...You don't have rain today
+Me > next 3 days?
+Bot > You may have rain on monday
+Me > next 4 days?
+Bot > You may have rain on monday
+Me > sun
+Bot > You may not have sun in the next 4 days.
+Me > next 5 days?
+Bot > 
+Forecast is available only for the next 4 days.
+You may not have sun in the next 5 days.
+Me > quit
+Bot > 
+
+Hello! You can ask me questions about the weather in any major city in the world. What would you like to know?
+Me > bangalore today
+Bot > Fetching weather information from Google...It is cloudy today. Humidity: 45% Wind: W at 9 mph
+Me > rain in the next 3 days?
+Bot > You may not have rain in the next 3 days.
+Me > sun?
+Bot > You may have sun on sunday
+Me > quit
+Bot > 
+
+Hello! You can ask me questions about the weather in any major city in the world. What would you like to know?
+Me > india
+Bot > no, there won't be
+Me > quit
+Bot > 
+
+Hello! You can ask me questions about the weather in any major city in the world. What would you like to know?
+Me > bangalore
+Bot > Fetching weather information from Google...It is overcast today. Humidity: 25% Wind: N at 11 mph
+Me > delhi
+Bot > Fetching weather information from Google...It is clear today. Humidity: 16% Wind: W at 5 mph
+Me > lucknow
+Bot > I don't know what that means. If I asked you the same question, what would you reply?
+Me > exit
+Me > lucknow
+Bot > exit
+Me > tomorrow
+Bot > It may be  mostly sunny tomorrow
+Me > india
+Bot > no, there won't be
+Me > quit
+Bot > Writing new entries to database...
+
+Hello! You can ask me questions about the weather in any major city in the world. What would you like to know?
+Me > Australia
+Bot > Which city in Australia?
+Me > sydney
+Bot > Fetching weather information from Google...It is partly cloudy today. Humidity: 82% Wind: S at 5 mph
+Me > quit
+Bot > 
+
+Hello! You can ask me questions about the weather in any major city in the world. What would you like to know?
+Me > india
+Bot > Which city in India?
+Me > bangalore
+Bot > Fetching weather information from Google...It is clear today. Humidity: 27% Wind: W at 7 mph
+Me > next 3 days
+Bot > It may be  clear . Humidity: 27% Wind: W at 7 mph
+Me > cloud
+Bot > You may not have cloud in the next 3 days.
+Me > quit
+Bot > 
