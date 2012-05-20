@@ -127,11 +127,12 @@ def chat():
 
 
     for i in countrylist:
-      if lower(i[0]) in lower(input):
-	printstr = 'Which city in ' + i[0] + '?'
-	condcountry = True
-	foundinfo = True
-	break
+      for j in currentstring:
+	if lower(i[0]) == lower(j):
+	  printstr = 'Which city in ' + i[0] + '?'
+	  condcountry = True
+	  foundinfo = True
+	  break
       
     if condcountry:
       print printstr
