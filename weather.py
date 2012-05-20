@@ -22,7 +22,11 @@ def get_weather(location_id, hl = ''):
     """
 
     url = GOOGLE_WEATHER_URL % (location_id, hl)
-    handler = urllib2.urlopen(url)
+    try:
+      handler = urllib2.urlopen(url)
+    except:
+      print 'Couldn\'t connect to internet'
+      return {}
     dom = minidom.parse(handler)    
     handler.close()
 
