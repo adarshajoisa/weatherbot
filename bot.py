@@ -15,6 +15,7 @@ import sentence
 import readfile
 import temperature
 import log
+import spellcheck
 import string
 from string import lower
 
@@ -76,6 +77,10 @@ def chat():
 	  continue
       break
       
+    corrected_input = spellcheck.correct(input)
+    if corrected_input != input:
+      print 'corrected the input to: \"' + corrected_input + '\"'
+      input = corrected_input
     currentstring = input.split()
     conversation.append(currentstring)
     
@@ -221,7 +226,9 @@ def chat():
 	logstr += printstr
 	responseinput = raw_input('Me > ')
 	logstr += '\nMe > ' + responseinput
-	responsedict[input] = responseinput
+	if not responseinput in ('exit', 'quit'):
+	  responsedict[input] = responseinput
+	  print 'response learnt'
       else:
 	printstr =  response
 	print printstr
