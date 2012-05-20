@@ -40,3 +40,4 @@ are you human|No, I am a computer program designed to emulate intelligence.
 will it be holiday|yes
 todya|Did you mean today?
 yo boy whassup|nothing much, you want to know about the weather?
+nw york|exot
