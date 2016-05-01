@@ -1,0 +1,17 @@
+{
+  "name": "weatherbot",
+  "scripts": {
+  },
+  "env": {
+  },
+  "formation": {
+  },
+  "addons": [
+
+  ],
+  "buildpacks": [
+    {
+      "url": "https://github.com/Nova-X/weatherbot.git"
+    }
+  ]
+}
